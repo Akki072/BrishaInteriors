@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+/* <---------------------------------------------------------- LOGO */
+.logo-nav{
+  border-radius: 600px;
+  width: 80px;
+}
+
+/* <---------------------------------------------------------- NAV */
+.navigation{
+  background-color: #FFEDDB;
+  height:20vh;
+  padding:2rem;
+  color:black;
+}
+.brand-title{
+  font-size:2.5rem;
+  color:black;
+}
+.toggle-class {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35px;
+    height: 30px;
+}
+.toggle-class:hover{
+  cursor: pointer;
+}
+.toggle-class .bars {
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+.navigation-items ul{
+  list-style:none;
+  font-size:1.8rem;
+  margin: 0 0.5rem;
+}
+.navigation ul li{
+  padding:1.5rem;
+}
+.navigation ul li:hover{
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 0.8rem;
+}
+.navigation-links{
+  color:black;
+}
+.navigation-links:hover{
+  color:white;
+}
+
+/* <---------------------------------------------------------- TITLE */
+#title{
+  height:100vh
+}
+.title{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)),url(images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:79vh;
+}
+.title-text {
+  font-size: 7.5vw;
+  font-weight: 500;
+  font-family: 'Playfair Display', serif;
+}
+
+/* <---------------------------------------------------------- ABOUT US */
+#about-us{
+  background-color: #2C3333;
+}
+.about-us-title{
+  font-weight: 600;
+}
+.about-us-text{
+  line-height: 2;
+}
+.carousel{
+  margin: auto 0;
+}
+
+/* <---------------------------------------------------------- PROJECTS */
+#projects{
+  background-color:#FFEDDB;
+  color:#2C3333;
+}
+.recent-projects-title{
+  font-weight: 600;
+}
+.project-report{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin:3rem 3rem 0;
+}
+.project-report-item{
+  margin:0 5rem;
+}
+.project-report-item h3{
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+/* <---------------------------------------------------------- CONTACT*/
+#contact{
+  background-color: #2C3333;
+  padding:0.5rem;
+  letter-spacing:0.1rem;
+}
+
+/* <---------------------------------------------------------- FOOTER */
+#footer{
+  background-color:#FFEDDB;
+  text-align: center;
+  font-size: 3rem;
+}
+.social-media a{
+  text-decoration: none;
+  margin:5%;
+  color:#873E01;
+}
+
+/* <---------------------------------------------------------- MEDIA QUERIES */
+@media (max-width:610px) {
+  .navigation{
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    height:15vh;
+    padding:1.5rem;
+  }
+  .brand-title{
+    font-size: 2rem;
+  }
+  .navigation-items{
+    display:none;
+    position:absolute;
+    left:0;
+    width:100%;
+    background-color: #d2947b;
+    z-index:1;
+  }
+  .navigation-items ul{
+    flex-direction:column;
+    text-align:center;
+    width:100%;
+    margin: 0.5rem 0;
+  }
+  .navigation-items ul li{
+    padding:1rem;
+  }
+  .toggle-class{
+    display:flex;
+  }
+  #title{
+    height:50vh;
+  }
+  .title{
+    height:35vh;
+  }
+  .title-text{
+    font-size: 3rem;
+  }
+  .about-us-text{
+    margin-bottom:2rem;
+  }
+  .project-report{
+    flex-flow: column nowrap;
+  }
+  .project-report-item{
+    margin:1rem
+  }
+  #about-us,#projects,#footer{
+    text-align: center;
+  }
+  #footer a{
+    margin: 0 16px;
+  }
+}
