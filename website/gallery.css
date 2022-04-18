@@ -25,9 +25,10 @@
   padding:2rem;
 }
 .gallery-item{
-  height:45vh;
+  height:25vh;
   flex-grow:1;
   padding:0.5rem;
+  width:35%;
 }
 .gallery-item img{
   height:100%;
